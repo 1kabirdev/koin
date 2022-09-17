@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text = "${mainPresenter.sayHello()}\n${mainViewModel.sayHello()}"
+        textView.text =
+            "${mainPresenter.giveData(this.toString())}\n${mainViewModel.giveData(this.toString())}"
     }
 }

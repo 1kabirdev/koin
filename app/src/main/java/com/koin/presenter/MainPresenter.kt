@@ -8,5 +8,5 @@ import com.koin.repository.MainRepository
  */
 class MainPresenter(private val repository: MainRepository) {
 
-    fun sayHello() = "${repository.giveHello()} from MainPresenter"
+    fun giveData(a:String) = "${repository.giveData(a)} from MainPresenter"
 }
